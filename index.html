@@ -114,6 +114,8 @@ margin:auto;
 padding:20px 15px 60px
 }
 
+/* FRONT / MIDDLE SECTION */
+
 .hero{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -121,51 +123,40 @@ gap:22px;
 align-items:center
 }
 
-.copy{
+.middle-logo{
 background:#fff;
 border:1px solid #e5eaf2;
 border-radius:24px;
-padding:30px;
-box-shadow:0 12px 35px #071d4415
-}
-
-.tag{
-display:inline-block;
-background:#fff0bd;
-border:1px solid #e4c55e;
-border-radius:99px;
-padding:7px 12px;
-font-weight:900;
-color:#694f0b
-}
-
-h1{
-font-size:clamp(30px,5vw,54px);
-line-height:1.08;
-color:var(--n);
-margin:14px 0
-}
-
-h1 span{color:var(--g)}
-
-.lead{
-font-size:18px;
-line-height:1.9;
-color:#4b5565
-}
-
-.actions{
+padding:20px;
+box-shadow:0 12px 35px #071d4415;
 display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin-top:18px
+align-items:center;
+justify-content:center
 }
 
-.hero img{
+.middle-logo img{
+width:100%;
+max-width:520px;
+height:auto;
+display:block;
+border-radius:20px;
+object-fit:contain
+}
+
+.hero-poster img{
 width:100%;
 display:block;
 border-radius:24px;
 box-shadow:0 12px 35px #071d4420
+}
+
+.front-contact{
+text-align:center;
+margin-top:16px
+}
+
+.front-contact .btn{
+margin:4px
 }
 
 section{padding:35px 0}
@@ -330,17 +321,39 @@ z-index:30
 }
 
 @media(max-width:850px){
-.hero,.contact{grid-template-columns:1fr}
-.features{grid-template-columns:repeat(2,1fr)}
-.products{grid-template-columns:repeat(2,1fr)}
-.links{display:none}
+.hero,.contact{
+grid-template-columns:1fr
+}
+
+.features{
+grid-template-columns:repeat(2,1fr)
+}
+
+.products{
+grid-template-columns:repeat(2,1fr)
+}
+
+.links{
+display:none
+}
 }
 
 @media(max-width:500px){
-.products,.features{grid-template-columns:1fr 1fr}
-.brand b{font-size:15px}
-.brand small{font-size:10px}
-.copy{padding:22px}
+.products,.features{
+grid-template-columns:1fr 1fr
+}
+
+.brand b{
+font-size:15px
+}
+
+.brand small{
+font-size:10px
+}
+
+.middle-logo{
+padding:12px
+}
 }
 </style>
 </head>
@@ -356,6 +369,7 @@ MSJ Seven Star Enterprise Karak • Cash &amp; Installment Available
 
 <a class="brand" href="#home">
 <img src="1786697716170.png" alt="MSJ Seven Star Enterprise Karak logo">
+
 <div>
 <b>MSJ Seven Star Enterprise</b>
 <small>KARAK • DIGITAL MARKETING</small>
@@ -369,9 +383,9 @@ MSJ Seven Star Enterprise Karak • Cash &amp; Installment Available
 </div>
 
 <a class="btn wa"
-href="https://wa.me/923438038809?text=Assalam-o-Alaikum%2C%20mujhe%20product%20aur%20installment%20details%20chahiye."
+href="https://wa.me/923478038809?text=Assalam-o-Alaikum%2C%20mujhe%20product%20aur%20installment%20details%20chahiye."
 target="_blank">
-WhatsApp
+💬 WhatsApp: 0347 8038809
 </a>
 
 </nav>
@@ -379,30 +393,23 @@ WhatsApp
 
 <main id="home">
 
+<!-- MIDDLE SECTION: OLD STAR/TEXT SECTION REMOVED -->
+
 <section class="hero">
 
-<div class="copy">
+<div>
 
-<span class="tag">
-تحصیل روڈ، نیئر GPO کرک
-</span>
+<div class="middle-logo">
+<img src="1786697716170.png"
+alt="MSJ Seven Star Enterprise Karak">
+</div>
 
-<h1>
-MSJ Seven Star <span>Enterprise</span> Karak
-</h1>
-
-<p class="lead">
-گھر کے لیے بہترین الیکٹرانکس کی سہولت۔
-<b>نقد اور آسان اقساط</b> دونوں دستیاب ہیں۔
-تازہ ریٹ اور اقساط کی تفصیل کے لیے براہِ راست WhatsApp یا Call پر رابطہ کریں۔
-</p>
-
-<div class="actions">
+<div class="front-contact">
 
 <a class="btn wa"
-href="https://wa.me/923438038809?text=Assalam-o-Alaikum%2C%20mujhe%20products%20aur%20installment%20details%20chahiye."
+href="https://wa.me/923478038809?text=Assalam-o-Alaikum%2C%20mujhe%20product%20aur%20installment%20details%20chahiye."
 target="_blank">
-💬 WhatsApp پر رابطہ
+💬 WhatsApp: 0347 8038809
 </a>
 
 <a class="btn call"
@@ -411,9 +418,10 @@ href="tel:+923349294754">
 </a>
 
 </div>
+
 </div>
 
-<div>
+<div class="hero-poster">
 <img src="file_00000000df5c82119f9b77a99a24345f.png"
 alt="MSJ Seven Star Enterprise Karak promotional poster">
 </div>
@@ -460,7 +468,7 @@ alt="MSJ Seven Star Enterprise Karak promotional poster">
 </div>
 
 <div class="poster">
-<img src="assets/msj-poster.png"
+<img src="file_00000000df5c82119f9b77a99a24345f.png"
 alt="MSJ Seven Star Enterprise poster">
 </div>
 
