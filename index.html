@@ -3,8 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>MSJ Seven Star Enterprise Karak</title>
-<meta name="description" content="MSJ Seven Star Enterprise Karak — Cash & Installment Available.">
+
+<meta name="description"
+content="MSJ Seven Star Enterprise Karak — Cash & Installment Available.">
 
 <style>
 :root{
@@ -12,31 +15,36 @@
 --b:#0d4f9b;
 --g:#d3a52b;
 --wa:#16a34a;
---t:#182230
+--fb:#1877f2;
+--t:#182230;
 }
 
-*{box-sizing:border-box}
+*{
+box-sizing:border-box;
+}
 
-html{scroll-behavior:smooth}
+html{
+scroll-behavior:smooth;
+}
 
 body{
 margin:0;
 font-family:Arial,"Noto Sans Arabic",sans-serif;
 color:var(--t);
-background:linear-gradient(#f7faff,#fff,#fffaf0)
+background:linear-gradient(#f7faff,#fff,#fffaf0);
 }
 
-a{text-decoration:none}
+a{
+text-decoration:none;
+}
 
 .top{
-.fb{
-background:#1877f2;
-color:#fff !important;
-padding:12px 16px;
-border-radius:12px;
-font-weight:900;
-display:inline-block
-}
+background:var(--n);
+color:#fff;
+text-align:center;
+padding:9px;
+font-weight:700;
+font-size:14px;
 }
 
 header{
@@ -45,24 +53,24 @@ top:0;
 z-index:10;
 background:#fffffff5;
 backdrop-filter:blur(8px);
-border-bottom:1px solid #e5e9f0
+border-bottom:1px solid #e5e9f0;
 }
 
 .nav{
 max-width:1150px;
 margin:auto;
-padding:8px 15px;
+padding:10px 15px;
 min-height:72px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:15px
+gap:12px;
 }
 
 .brand{
 display:flex;
 align-items:center;
-gap:10px
+gap:10px;
 }
 
 .brand img{
@@ -70,63 +78,73 @@ width:54px;
 height:54px;
 object-fit:cover;
 border-radius:13px;
-box-shadow:0 5px 18px #071d4430
+box-shadow:0 5px 18px #071d4430;
 }
 
 .brand b{
 display:block;
 color:var(--n);
-font-size:18px
+font-size:18px;
 }
 
 .brand small{
 color:#9a7114;
-font-weight:800
+font-weight:800;
 }
 
 .links{
 display:flex;
 gap:18px;
 font-weight:800;
-font-size:14px
+font-size:14px;
 }
 
-.links a{color:var(--n)}
+.links a{
+color:var(--n);
+}
 
 .btn{
 display:inline-block;
-padding:12px 16px;
+padding:11px 14px;
 border-radius:12px;
-font-weight:900
+font-weight:900;
+text-align:center;
 }
 
 .wa{
 background:var(--wa);
-color:#fff
+color:#fff !important;
+}
+
+.fb{
+background:var(--fb);
+color:#fff !important;
 }
 
 .call{
 background:var(--n);
-color:#fff
+color:#fff !important;
 }
-  .fb{
-background:#1877f2;
-color:#fff
-  }
+
+.header-buttons{
+display:flex;
+gap:7px;
+align-items:center;
+flex-wrap:wrap;
+}
 
 main{
 max-width:1150px;
 margin:auto;
-padding:20px 15px 60px
+padding:20px 15px 60px;
 }
 
-/* FRONT / MIDDLE SECTION */
+/* LOGO PICTURE */
 
-.hero{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:22px;
-align-items:center
+.logo-section{
+display:flex;
+justify-content:center;
+margin:20px 0 35px;
 }
 
 .middle-logo{
@@ -135,55 +153,45 @@ border:1px solid #e5eaf2;
 border-radius:24px;
 padding:20px;
 box-shadow:0 12px 35px #071d4415;
-display:flex;
-align-items:center;
-justify-content:center
+width:100%;
+max-width:700px;
 }
 
 .middle-logo img{
 width:100%;
-max-width:520px;
 height:auto;
 display:block;
 border-radius:20px;
-object-fit:contain
+object-fit:contain;
 }
 
-.hero-poster img{
-width:100%;
-display:block;
-border-radius:24px;
-box-shadow:0 12px 35px #071d4420
-}
+/* TITLES */
 
-.front-contact{
-text-align:center;
-margin-top:16px
+section{
+padding:25px 0;
 }
-
-.front-contact .btn{
-margin:4px
-}
-
-section{padding:35px 0}
 
 .title{
 text-align:center;
-margin-bottom:20px
+margin-bottom:20px;
 }
 
 .title h2{
 color:var(--n);
 font-size:30px;
-margin:0
+margin:0;
 }
 
-.title p{color:#667085}
+.title p{
+color:#667085;
+}
+
+/* FEATURES */
 
 .features{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:14px
+gap:14px;
 }
 
 .card{
@@ -192,40 +200,46 @@ border:1px solid #e6eaf0;
 border-radius:17px;
 padding:20px;
 text-align:center;
-box-shadow:0 8px 25px #071d4410
+box-shadow:0 8px 25px #071d4410;
 }
 
-.icon{font-size:32px}
+.icon{
+font-size:32px;
+}
 
 .card h3{
 color:var(--n);
-margin:8px 0
+margin:8px 0;
 }
 
 .card p{
 color:#667085;
 margin:0;
 line-height:1.6;
-font-size:14px
+font-size:14px;
 }
+
+/* POSTER */
 
 .poster{
 background:#fff;
 padding:10px;
 border-radius:22px;
-box-shadow:0 12px 35px #071d4420
+box-shadow:0 12px 35px #071d4420;
 }
 
 .poster img{
 width:100%;
 display:block;
-border-radius:16px
+border-radius:16px;
 }
+
+/* PRODUCTS */
 
 .products{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:14px
+gap:14px;
 }
 
 .product{
@@ -233,7 +247,7 @@ background:#fff;
 border:1px solid #e6eaf0;
 border-radius:17px;
 padding:18px;
-box-shadow:0 8px 25px #071d4410
+box-shadow:0 8px 25px #071d4410;
 }
 
 .product .pic{
@@ -242,19 +256,19 @@ border-radius:13px;
 background:linear-gradient(135deg,#edf4ff,#fff5d8);
 display:grid;
 place-items:center;
-font-size:52px
+font-size:52px;
 }
 
 .product h3{
 color:var(--n);
-margin:12px 0 5px
+margin:12px 0 5px;
 }
 
 .product p{
 color:#667085;
 font-size:13px;
 line-height:1.5;
-margin:0 0 12px
+margin:0 0 12px;
 }
 
 .mini{
@@ -265,8 +279,10 @@ color:#087c37;
 padding:9px;
 border-radius:10px;
 font-weight:900;
-font-size:13px
+font-size:13px;
 }
+
+/* CONTACT */
 
 .contact{
 background:linear-gradient(135deg,var(--n),var(--b));
@@ -275,40 +291,67 @@ border-radius:24px;
 padding:28px;
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:20px
+gap:20px;
 }
 
 .contact h2{
 font-size:30px;
-margin:0 0 8px
+margin:0 0 8px;
 }
 
 .contact p{
 color:#dce8fa;
-line-height:1.8
+line-height:1.8;
 }
 
 .clinks{
 display:grid;
-gap:10px
+gap:10px;
 }
 
-.clinks a,.loc{
+.clinks a{
+display:block;
+padding:14px;
+border-radius:13px;
+font-weight:900;
+text-align:center;
+}
+
+.clinks .wa{
+background:#20c967;
+color:#fff;
+}
+
+.clinks .fb{
+background:#1877f2;
+color:#fff;
+}
+
+.clinks .call{
+background:#061b43;
+color:#fff;
+}
+
+.loc{
 background:#fff;
 color:var(--n);
 padding:14px;
 border-radius:13px;
-font-weight:900
+font-weight:900;
+margin-top:10px;
+text-align:center;
 }
 
-.loc{margin-top:10px}
+/* FOOTER */
 
 footer{
 background:#041536;
 color:#d8e4f7;
 text-align:center;
-padding:25px
+padding:25px;
 }
+
+/* FLOAT WHATSAPP */
 
 .float{
 position:fixed;
@@ -323,43 +366,64 @@ display:grid;
 place-items:center;
 font-size:27px;
 box-shadow:0 10px 30px #0004;
-z-index:30
+z-index:30;
 }
+
+/* MOBILE */
 
 @media(max-width:850px){
-.hero,.contact{
-grid-template-columns:1fr
+
+.nav{
+flex-wrap:wrap;
 }
 
-.features{
-grid-template-columns:repeat(2,1fr)
-}
-
-.products{
-grid-template-columns:repeat(2,1fr)
+.header-buttons{
+width:100%;
+justify-content:center;
 }
 
 .links{
-display:none
+display:none;
 }
+
+.features{
+grid-template-columns:repeat(2,1fr);
+}
+
+.products{
+grid-template-columns:repeat(2,1fr);
+}
+
+.contact{
+grid-template-columns:1fr;
+}
+
 }
 
 @media(max-width:500px){
-.products,.features{
-grid-template-columns:1fr 1fr
+
+.products,
+.features{
+grid-template-columns:1fr 1fr;
 }
 
 .brand b{
-font-size:15px
+font-size:15px;
 }
 
 .brand small{
-font-size:10px
+font-size:10px;
 }
 
 .middle-logo{
-padding:12px
+padding:12px;
 }
+
+.header-buttons .btn{
+font-size:12px;
+padding:9px 10px;
+}
+
 }
 </style>
 </head>
@@ -371,15 +435,20 @@ MSJ Seven Star Enterprise Karak • Cash &amp; Installment Available
 </div>
 
 <header>
+
 <nav class="nav">
 
 <a class="brand" href="#home">
-<img src="1786697716170.png" alt="MSJ Seven Star Enterprise Karak logo">
+
+<img
+src="1786697716170.png"
+alt="MSJ Seven Star Enterprise Karak Logo">
 
 <div>
 <b>MSJ Seven Star Enterprise</b>
 <small>KARAK • DIGITAL MARKETING</small>
 </div>
+
 </a>
 
 <div class="links">
@@ -388,36 +457,47 @@ MSJ Seven Star Enterprise Karak • Cash &amp; Installment Available
 <a href="#contact">Contact</a>
 </div>
 
-  <a class="btn wa"
+<div class="header-buttons">
+
+<a
+class="btn wa"
 href="https://wa.me/923438038809?text=Assalam-o-Alaikum%2C%20mujhe%20product%20aur%20installment%20details%20chahiye."
-target="_blank">
-💬 WhatsApp: 0343 8038809
+target="_blank"
+rel="noopener noreferrer">
+💬 WhatsApp
 </a>
-  
-<a class="fb"
+
+<a
+class="btn fb"
 href="https://www.facebook.com/profile.php?id=61593604250614"
 target="_blank"
 rel="noopener noreferrer">
-  📘 Facebook Page
+📘 Facebook Page
 </a>
 
+</div>
+
 </nav>
+
 </header>
 
 <main id="home">
 
-<!-- MIDDLE SECTION: OLD STAR/TEXT SECTION REMOVED -->
+<!-- LOGO PICTURE -->
 
-<section class="hero">
-
-<div>
+<section class="logo-section">
 
 <div class="middle-logo">
-<img src="1786697716170.png"
+
+<img
+src="1786697716170.png"
 alt="MSJ Seven Star Enterprise Karak">
+
 </div>
 
 </section>
+
+<!-- FEATURES -->
 
 <section>
 
@@ -451,27 +531,18 @@ alt="MSJ Seven Star Enterprise Karak">
 
 </section>
 
-<section id="poster">
-
-<div class="title">
-<h2>MSJ Seven Star Enterprise Poster</h2>
-<p>قیمتیں ویب سائٹ پر شامل نہیں کی گئی ہیں۔</p>
-</div>
-
-<div class="poster">
-<img src="file_00000000df5c82119f9b77a99a24345f.png"
-alt="MSJ Seven Star Enterprise poster">
-</div>
-
-</section>
+<!-- PRODUCTS -->
 
 <section id="products">
 
 <div class="title">
+
 <h2>Products</h2>
+
 <p>
 اپنی پسند کا product منتخب کریں اور WhatsApp پر تازہ rate/availability پوچھیں۔
 </p>
+
 </div>
 
 <div class="products">
@@ -480,136 +551,113 @@ alt="MSJ Seven Star Enterprise poster">
 <div class="pic">🧊</div>
 <h3>Refrigerator</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Refrigerator%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Refrigerator%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">❄️</div>
 <h3>Air Conditioner</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Air Conditioner%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Air Conditioner%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">🚰</div>
 <h3>Water Dispenser</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Water Dispenser%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Water Dispenser%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">🧊</div>
 <h3>Deep Freezer</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Deep Freezer%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Deep Freezer%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">🛵</div>
 <h3>Electric Scooty</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Electric Scooty%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Electric Scooty%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">🧺</div>
 <h3>Washing Machine</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Washing Machine%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Washing Machine%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">📺</div>
 <h3>LED TV</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=LED TV%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=LED TV%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">☀️</div>
 <h3>Solar System</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Solar System%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Solar System%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">⚡</div>
 <h3>Generator</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Generator%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Generator%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">🌬️</div>
 <h3>Air Cooler</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Air Cooler%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Air Cooler%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">🍳</div>
 <h3>Oven</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Oven%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Oven%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 <article class="product">
 <div class="pic">🔌</div>
 <h3>Small Appliances</h3>
 <p>مختلف designs اور models کے لیے رابطہ کریں۔</p>
-<a class="mini"
-href="https://wa.me/923438038809?text=Small Appliances%20کی%20details%20اور%20installment%20information%20چاہیے۔"
-target="_blank">
-WhatsApp Details
-</a>
+<a class="mini" href="https://wa.me/923438038809?text=Small Appliances%20کی%20details%20اور%20installment%20information%20چاہیے۔" target="_blank">WhatsApp Details</a>
 </article>
 
 </div>
+
 </section>
+
+<!-- POSTER -->
+
+<section id="poster">
+
+<div class="title">
+
+<h2>MSJ Seven Star Enterprise Poster</h2>
+
+<p>قیمتیں ویب سائٹ پر شامل نہیں کی گئی ہیں۔</p>
+
+</div>
+
+<div class="poster">
+
+<img
+src="file_00000000df5c82119f9b77a99a24345f.png"
+alt="MSJ Seven Star Enterprise Poster">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
 
 <section id="contact">
 
@@ -633,19 +681,32 @@ WhatsApp Details
 
 <div class="clinks">
 
-<a href="https://wa.me/923438038809" target="_blank">
+<a
+class="wa"
+href="https://wa.me/923438038809"
+target="_blank"
+rel="noopener noreferrer">
 💬 WhatsApp: 0343 8038809
 </a>
-  <a class="fb"
+
+<a
+class="fb"
 href="https://www.facebook.com/profile.php?id=61593604250614"
 target="_blank"
 rel="noopener noreferrer">
-  📘 Facebook Page
-  </a>
+📘 Facebook Page
+</a>
 
-<a href="tel:+923349294754">
+<a
+class="call"
+href="tel:+923349294754">
 📞 Call: 0334 9294754
 </a>
+
+<div class="loc">
+📍 تحصیل روڈ، نیئر GPO کرک
+</div>
+
 </div>
 
 </div>
@@ -655,13 +716,19 @@ rel="noopener noreferrer">
 </main>
 
 <footer>
-<b>MSJ Seven Star Enterprise Karak</b><br>
+
+<b>MSJ Seven Star Enterprise Karak</b>
+<br>
+
 Cash &amp; Installment Available • Digital Marketing
+
 </footer>
 
-<a class="float"
+<a
+class="float"
 href="https://wa.me/923438038809"
 target="_blank"
+rel="noopener noreferrer"
 aria-label="WhatsApp">
 💬
 </a>
